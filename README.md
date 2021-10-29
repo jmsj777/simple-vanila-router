@@ -1,3 +1,7 @@
+# My fork of this project 
+
+This project is a fork from "Simple Vanilla Router" from 'praveen-me', but I added web components and some basic architectural changes.
+
 # Simple Vanilla Router
 
 This is the illustration of SPA(Single Page Routing) using Vanilla JavaScript.

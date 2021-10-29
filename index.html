@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simple Vanilla Router</title>
-  <script src="about.js"></script>
-  <script src="contact.js"></script>
-  <script src="home.js"></script>
-</head>
-<body>
-    <ul class="navbar-list">
-      <li class="navbar-item"><a href="#" onclick="onNavigate('/about'); return false;">About</a></li>
-      <li class="navbar-item"><a href="#" onclick="onNavigate('/'); return false;">Home</a></li>
-      <li class="navbar-item"><a href="#" onclick="onNavigate('/contact'); return false;">Contact</a></li>
-    </ul>
-  <div id="root"></div>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Vanilla Router</title>
+    <link rel="stylesheet" href="global.css" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="components/Link.js"></script>
+  </head>
+  <body>
+    <div>
+      <link-comp href=""> Home </link-comp>
+      <link-comp href="About"> About </link-comp>
+      <link-comp href="Contact"> Contact </link-comp>
+    </div>
+    <div id="root"></div>
+    <div class="templates">
+      <template id="t-link">
+        <a href="#"></a>
+      </template>
+      <template id="t-home">
+        <h1>I am Home Page</h1>
+      </template>
+      <template id="t-about">
+        <h1>I am About Page</h1>
+      </template>
+      <template id="t-contact">
+        <h1>I am Contact Page</h1>
+      </template>
+    </div>
+  </body>
 </html>
